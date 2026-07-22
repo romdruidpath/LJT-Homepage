@@ -27,3 +27,52 @@ Feel free to reach out via email: `jliugi [at] connect.ust.hk`.
 - **Jun 2024** &mdash; Graduated from Shanghai Jiao Tong University with a B.Eng. degree.
 - **2024** &mdash; "On the Universal Truthfulness Hyperplane Inside LLMs" accepted to EMNLP 2024.
 - **2024** &mdash; "In-Context Sharpness as Alerts" accepted to ICML 2024.
+
+## Publications
+
+A full list is available on the [Publications]({{ '/publications/' | prepend: site.baseurl }}) page. Below is a chronological mirror:
+
+{% assign sorted_pubs = site.publications | sort: "date" | reverse %}
+
+{% for pub in sorted_pubs %}
+  <div class="pub-entry" style="margin-bottom: 1.2em;">
+    <p style="margin: 0;">
+      <strong>{{ pub.title }}</strong><br>
+      <span style="color: #555;">{{ pub.date | date: "%Y" }} &middot; <em>{{ pub.venue }}</em></span>
+    </p>
+    <p style="margin: 0.3em 0; font-size: 0.92em; color: #333;">
+      {{ pub.citation | strip_html }}
+    </p>
+    <p style="margin: 0.3em 0; font-size: 0.92em;">
+      {% if pub.paperurl and pub.paperurl != '' %}
+        <a href="{{ pub.paperurl }}">[Paper]</a>
+      {% else %}
+        <span style="color: #888;">[Paper link coming soon]</span>
+      {% endif %}
+      <a href="{{ pub.url | prepend: site.baseurl }}">[Details]</a>
+    </p>
+  </div>
+{% endfor %}
+
+## Education
+
+- **Ph.D. in Computer Science**, Hong Kong University of Science and Technology (HKUST) &mdash; 2024 &ndash; Present
+- **B.Eng.**, Shanghai Jiao Tong University (SJTU) &mdash; 2020 &ndash; 2024
+
+## Research Experience
+
+- **Research Intern, MINIMAX** &mdash; Feb 2025 &ndash; Present
+- **Research Intern, Tencent WXG** (advised by Zifei Shan) &mdash; Jun 2024 &ndash; Sep 2024
+- **Research Intern, Shanghai AI Lab** (advised by Prof. Yu Cheng) &mdash; Jun 2023 &ndash; Dec 2023
+
+## Skills
+
+- **Research areas:** Large Language Models, Reasoning, Reinforcement Learning, Vision-Language Models, Hallucination Mitigation, Truthfulness, Interpretability
+- **Methods & tools:** Deep Learning, PyTorch, Hugging Face Transformers, Mechanistic Interpretability, Data Synthesis
+
+## Contact
+
+- **Email:** jliugi [at] connect.ust.hk
+- **GitHub:** [@Vicent0205](https://github.com/Vicent0205)
+- **Google Scholar:** [profile](https://scholar.google.com/citations?hl=en&user=tbK9jl4AAAAJ&view_op=list_works&sortby=pubdate)
+- **X (Twitter):** [@junteng88716710](https://twitter.com/junteng88716710)
