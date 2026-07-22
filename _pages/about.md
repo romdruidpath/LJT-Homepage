@@ -30,29 +30,12 @@ Feel free to reach out via email: `jliugi [at] connect.ust.hk`.
 
 ## Publications
 
-A full list is available on the [Publications]({{ '/publications/' | prepend: site.baseurl }}) page. Below is a chronological mirror:
-
-{% assign sorted_pubs = site.publications | sort: "date" | reverse %}
-
-{% for pub in sorted_pubs %}
-  <div class="pub-entry" style="margin-bottom: 1.2em;">
-    <p style="margin: 0;">
-      <strong>{{ pub.title }}</strong><br>
-      <span style="color: #555;">{{ pub.date | date: "%Y" }} &middot; <em>{{ pub.venue }}</em></span>
-    </p>
-    <p style="margin: 0.3em 0; font-size: 0.92em; color: #333;">
-      {{ pub.citation | strip_html }}
-    </p>
-    <p style="margin: 0.3em 0; font-size: 0.92em;">
-      {% if pub.paperurl and pub.paperurl != '' %}
-        <a href="{{ pub.paperurl }}">[Paper]</a>
-      {% else %}
-        <span style="color: #888;">[Paper link coming soon]</span>
-      {% endif %}
-      <a href="{{ pub.url | prepend: site.baseurl }}">[Details]</a>
-    </p>
-  </div>
-{% endfor %}
+- **SynLogic: Synthesizing Verifiable Reasoning Data at Scale for Learning Logical Reasoning and Beyond** &mdash; Arxiv (2025). Junteng Liu, Yuanxiang Fan, Zhuo Jiang, Han Ding, Yongyi Hu, Chi Zhang, Yiqi Shi, Shitong Weng, Aili Chen, Shiqi Chen, Yunan Huang, Mozhi Zhang, Pengyu Zhao, Junjie Yan, Junxian He.
+- **On the Perception Bottleneck of VLMs for Chart Understanding** &mdash; Arxiv (2025). Junteng Liu, Weihao Zeng, Xiwen Zhang, Yijun Wang, Zifei Shan, Junxian He.
+- **On the Universal Truthfulness Hyperplane Inside LLMs** &mdash; EMNLP 2024. Junteng Liu, Shiqi Chen, Yu Cheng, Junxian He.
+- **In-Context Sharpness as Alerts: An Inner Representation Perspective for Hallucination Mitigation** &mdash; ICML 2024. Shiqi Chen, Miao Xiong, Junteng Liu, Zhengxuan Wu, Teng Xiao, Siyang Gao, Junxian He.
+- **C-Eval: A Multi-Level Multi-Discipline Chinese Evaluation Suite for Foundation Models** &mdash; NeurIPS 2023. Yuzhen Huang, Yuzhuo Bai, Zhihao Zhu, Junlei Zhang, Jinghan Zhang, Tangjun Su, Junteng Liu, Chuancheng Lv, Yikai Zhang, Jiayi Lei, Yao Fu, Maosong Sun, Junxian He.
+- **Composing Parameter-Efficient Modules with Arithmetic Operations** &mdash; NeurIPS 2023. Jinghan Zhang, Shiqi Chen, Junteng Liu, Junxian He.
 
 ## Education
 
